@@ -14,6 +14,7 @@ body{
     color: black;
     background-color: var(--secondary);
     line-height: 1.5;
+    align-content: center;
 }
 
 body h2{
@@ -42,7 +43,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     position: sticky;
-    position: -webkit-sticky;
     background-color: var(--primary);
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
@@ -52,11 +52,10 @@ header h1{
     background-color: var(--primary);
     padding: 5px 1% 5px 6%;
     margin: 0;
-    font-size: 5ww;
+    font-size: 50px;
     line-height: 1;
     font-weight: bold;
     text-shadow: 0 0 10px var(--tertiary);
-    
 }
 
 nav{
@@ -70,7 +69,7 @@ nav a {
     padding: 5px 10px;
     color: var(--secondary);
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav a:hover{
@@ -89,9 +88,15 @@ main{
 }
 
 .hero-banner{
-    background-color: var(--tertiary);
+    background: var(--tertiary);
+    background-image: url("./abstract-black-white-bokeh-background_1962-1324.jpg");
     background-size: cover;
     background-position: center;
+    min-height: 30vh;
+    padding: 2% 6%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 50px;
 }
 
 .hero-banner div{
@@ -105,6 +110,7 @@ main{
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    text-align: center;
 }
 
 .page-wrapper {
@@ -116,22 +122,36 @@ main{
 .page-section{
     margin: 25px 0;
     padding: 10px 0;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
 }
 
 .page-section > h2 {
     flex: 0 0 20%;
-    text-align: right;
+    text-align: initial ;
     padding-right: 15%;
-    border-right: 5px solid var(--primary);
-    font-size: 30px;
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 50px;
     line-height: 1.5;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 20px ;
+    padding-bottom: 0 0 ;
+    
+}
+.page-section img{
+    height: 300px;
+    width: 300px;
+    flex-basis: 40%;
+    float: right;
 
 }
 
@@ -140,25 +160,28 @@ main{
 }
 
 .page-section p{
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+    padding-right: 7px;
+    display: flex;
 }
 
 .flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90vw;
 }
 
 .flex-item{
-    border: 3px solid var(--tertiary);
     background-color: var(--tertiary);
     color: var(--secondary);
     min-height: 150px;
     max-height: 150px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-basis: calc(50% - 1.6rem);
-    padding: 0 0 20px 0;
+    padding: 0 0 0 0;
     margin: 0.5em;
     text-decoration: none;
     background-blend-mode: soft-light;
@@ -185,7 +208,7 @@ main{
     font-size: 1.6rem;
 }
 
-.contact address{
+footer address{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -193,25 +216,136 @@ main{
     height: 100%;
 }
 
-.contact address a{
-    color: var(--primary);
-    padding: 5px;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 1.3rem;
-    background-image: linear-gradient(270deg var (var(--primary) 0% var(--primary) 100%));
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.5s ease-in;
-    margin: 0 0 0.2rem 0.1rem;
-    display: inline-block;
+footer{
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary);
+    background-size: cover;
+    width: 100%;
+}
+footer h2{
+    color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: bold;
 }
 
-.contact address a:hover{
-    background-size: 100% 88%;
-    color: var(--tertiary);
+footer address a{
+    color: var(--secondary);
+    padding: 5px 10px;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 25px;
+    transition: all 0.5s ease-in;
+    margin: 0 0 0.2rem 0.1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+footer address a:hover{
+    background-size: 100% 88%;
+    color: var(--tertiary)
+}
+footer a:last-child{
+    margin-right: 0;
+}
+
 #runbuddy{
-    background-image: url("../Projects/runBuddy/");
+    background: url(./flipped-hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+
+#pastel-puzzels{
+    background: url(./pastel-puzzels.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#calculator{
+    background: url(./calculator.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#led-wall{
+    background: url(./Led-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#surf-report{
+    background: url(./surf-report.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 980px){
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav a{
+        font-size: 25px;
+    }
+    footer h2, footer{
+        text-align: center;
+        width: 100%;
+    }
+    footer a, footer{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    header h1{
+        padding-bottom: 0;
+    }
+    header nav{
+        font-size: 25;
+    }
+}
+
+@media screen and (max-width: 575px){
+    #runbuddy img{
+        height: 200px;
+    }
+    .hero-banner h2{
+        font-size: 40px;
+    }
+    .page-section h2{
+        font-size: 40px;
+    }
+    .page-section p{
+        padding-right: 7px;
+    }
+    header nav{
+        font-size: 15px;
+    }
+    .page-section img{
+        width: 100%;
+    }
+    .page-section p{
+        text-align: center;
+    }
 }
