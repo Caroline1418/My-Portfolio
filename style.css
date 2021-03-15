@@ -55,7 +55,7 @@ header h1{
     font-size: 50px;
     line-height: 1;
     font-weight: bold;
-    text-shadow: 0 0 10px var(--tertiary);
+    font-style: oblique;
 }
 
 nav{
@@ -78,6 +78,7 @@ nav a:hover{
     background-color: var(--secondary);
 }
 
+
 nav a:last-child{
     margin-right: 0;
 }
@@ -93,7 +94,7 @@ main{
     background-size: cover;
     background-position: center;
     min-height: 30vh;
-    padding: 2% 6%;
+    padding: 5% 6%;
     display: flex;
     align-items: flex-end;
     font-size: 50px;
@@ -189,11 +190,12 @@ main{
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.9rem;
+    border-radius: 7px;
 }
 
 .flex-item:first-child {
     min-height: 400px;
-    flex-basis: 95.5%;
+    flex-basis: 97%;
 }
 
 .flex-item:hover{
@@ -265,8 +267,8 @@ footer a:last-child{
 }
 
 
-#pastel-puzzels{
-    background: url(./pastel-puzzels.jpg);
+#entertainment-720{
+    background: url(./720.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
