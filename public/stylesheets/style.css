@@ -90,7 +90,7 @@ main{
 
 .hero-banner{
     background: var(--tertiary);
-    background-image: url("./abstract-black-white-bokeh-background_1962-1324.jpg");
+    background-image: url("./public/images/abstract-black-white-bokeh-background_1962-1324.jpg");
     background-size: cover;
     background-position: center;
     min-height: 30vh;
@@ -261,32 +261,32 @@ footer a:last-child{
 }
 
 #runbuddy{
-    background: url(./flipped-hero-image.jpg);
+    background: url(./public/images/flipped-hero-image.jpg);
     background-repeat: no-repeat;
     background-size: 100%
 }
 
 
 #entertainment-720{
-    background: url(./720.png);
+    background: url(./public/images/720.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-#calculator{
-    background: url(./calculator.jpg);
+#auto-maintenance-log{
+    background: url(./public/images/auto-maintenance-log.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 #led-wall{
-    background: url(./Led-wall.jpg);
+    background: url(./public/images/Led-wall.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 #surf-report{
-    background: url(./surf-report.jpg);
+    background: url(./public/images/surf-report.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
