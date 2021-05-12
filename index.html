@@ -10,16 +10,27 @@
     <header>
         <h1>Caroline Phillips</h1>
         <nav>
-            <a href= "#about">About Me</a>
+            <button onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </button>
+            <!-- <a href= "#about">About Me</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
-            <a href="https://docs.google.com/document/d/1AfKxuo6OGvuOVSx3d8piexxeNio0nvM4y5Fqm2lWRF4/edit">Resume</a>
+            <a href="https://docs.google.com/document/d/1AfKxuo6OGvuOVSx3d8piexxeNio0nvM4y5Fqm2lWRF4/edit">Resume</a> -->
         </nav>
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
     </header>
 
     <section class="hero-banner">
         <div>
-            <h2>Web Developer</h2>
+            <h2 class="hero-heading">PORTFOLIO</h2>
+            <p>Browse my portfolio of projects</p>
         </div>
     </section>
 
@@ -44,37 +55,39 @@
             <div class="flex-container">
 
                 <a href="#" class="flex-item" id="surf-report">
-                <div>
+                <div class="surf-report">
                     <h3>Surf Report</h3>
                     <span>MERN Stack</span>
+                    <!-- <button class="report-btn">Check It Out</button> -->
                 </div>
                 </a>
 
                 <a href="#" class="flex-item" id="led-wall">
-                    <div>
+                    <div class="led-wall">
                         <h3>LED Wall</h3>
                         <span>Node/Iot</span>
                     </div>
                 </a>
 
                 <a href="https://radiant-headland-22067.herokuapp.com/" class="flex-item" id="auto-maintenance-log">
-                    <div>
+                    <div class="auto-log">
                         <h3>Auto Maintenance Log</h3>
                         <span>Full Stack</span>
                     </div>
                 </a>
 
                 <a href="https://caroline1418.github.io/entertainment720/" class="flex-item" id="entertainment-720">
-                    <div>
+                    <div class="e720">
                         <h3>Entertainment 720</h3>
                         <span>MERN Stack</span>
                     </div>
                 </a>
 
                 <a href="https://caroline1418.github.io/Run-Buddy/" class="flex-item" id="runbuddy">
-                    <div>
+                    <div class="run-buddy">
                         <h3>Run Buddy</h3>
                         <span>HTML/CSS</span>
+                        <!-- <button class="rbdy-btn">CHECK IT OUT</button> -->
                         
                         
                     </div>
@@ -93,5 +106,6 @@
             </address>
         </div>
     </footer>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html> 
