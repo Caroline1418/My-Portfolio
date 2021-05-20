@@ -374,7 +374,7 @@ p{
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    background-image: url(/assets/auto-maintenance-log.png);
+    background-image: url(/public/images/auto-maintenance-log.png);
     background-position: 0 0, 50% 50%;
     background-position-x:0px, 50%;
     background-position-y: 0px, 50%;
@@ -393,7 +393,7 @@ p{
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    background-image: url(/assets/ent720.png);
+    background-image: url(/public/images/ent720.png);
     background-position: 0 0, 50% 50%;
     background-position-x:0px, 50%;
     background-position-y: 0px, 50%;
@@ -412,7 +412,7 @@ p{
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    background-image: url(/assets/flipped-hero-image.jpg);
+    background-image: url(/public/images/flipped-hero-image.jpg);
     background-position: 0 0, 50% 50%;
     background-position-x:0px, 50%;
     background-position-y: 0px, 50%;
