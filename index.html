@@ -1,111 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caroline Phillips - Web Developer</title>
-    <link rel=stylesheet href="./style.css" />
-</head>
-<body>
-    <header>
-        <h1>Caroline Phillips</h1>
-        <nav>
-            <button onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            </button>
-            <!-- <a href= "#about">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-            <a href="https://docs.google.com/document/d/1AfKxuo6OGvuOVSx3d8piexxeNio0nvM4y5Fqm2lWRF4/edit">Resume</a> -->
-        </nav>
-        <script>
-            function myFunction(x) {
-                x.classList.toggle("change");
-            }
-        </script>
-    </header>
-
-    <section class="hero-banner">
-        <div>
-            <h2 class="hero-heading">PORTFOLIO</h2>
-            <p>Browse my portfolio of projects</p>
-        </div>
-    </section>
-
-    <main class="page-wrapper">
-
-        <section class="page-section" id="about">
-            <h2>About Me</h2>
-            <div>
-                <img src="./public/images/slovenian alps.jpeg" alt="Me taking a picture in front of the Slovenian Apls">
-                <p>
-                    My name is Caroline Phillips and I am currently studying to be a full stack web developer. I have worked in many different industries over the years such as: marketing, sales, and business support roles. I am very excited to become a certified full stack developer so I can take a step towards my new career path!
-                </p>
-                
-                <p>
-                    When I am not working or studying, you can find me skiing the best snow on earth or riding my horses. I am from Salt Lake City, Utah and I am so lucky to not only live in a beautiful place, but also live in a place that has a growing job market for the web development industry.
-                </p>
-            </div>
-        </section>
-
-        <section class="page-section" id="work">
-            <h2>Work</h2>
-            <div class="flex-container">
-
-                <a href="#" class="flex-item" id="surf-report">
-                <div class="surf-report">
-                    <h3>Surf Report</h3>
-                    <span>MERN Stack</span>
-                    <!-- <button class="report-btn">Check It Out</button> -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Caroline Phillips</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <h1>Caroline Phillips</h1>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work">My Work</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
+                    </ul>
                 </div>
-                </a>
+            </div>
+        </nav>
+        <!-- Hero-->
+        <header class="hero">
+            <div class="container">
+                <div class="masthead-subheading"></div>
+                <h2>WELCOME TO MY PORTFOLIO</h2>
+            </div>
+        </header>
 
-                <a href="#" class="flex-item" id="led-wall">
-                    <div class="led-wall">
-                        <h3>LED Wall</h3>
-                        <span>Node/Iot</span>
+        <main class="page-wrapper">
+
+            <section class="page-section" id="about">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">About Me</h2>
+                        <p class="section-subheading text-muted"> My name is Caroline Phillips and I am currently studying to be a full stack web developer. I have worked in many different industries over the years such as: marketing, sales, and business support roles. I am very excited to become a certified full stack developer so I can take a step towards my new career path!</p>
+                        <p class="section-subheading text-muted">When I am not working or studying, you can find me skiing the best snow on earth or riding my horses. I am from Salt Lake City, Utah and I am so lucky to not only live in a beautiful place, but also live in a place that has a growing job market for the web development industry.</p>
                     </div>
-                </a>
+                </div>
+            </section>
 
-                <a href="https://radiant-headland-22067.herokuapp.com/" class="flex-item" id="auto-maintenance-log">
-                    <div class="auto-log">
-                        <h3>Auto Maintenance Log</h3>
-                        <span>Full Stack</span>
+            <section class="page-section bg-light" id="Work">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">My Work</h2>
                     </div>
-                </a>
-
-                <a href="https://caroline1418.github.io/entertainment720/" class="flex-item" id="entertainment-720">
-                    <div class="e720">
-                        <h3>Entertainment 720</h3>
-                        <span>MERN Stack</span>
+                    <!-- <div class="row">
+                        <div class="col-lg-1">
+                            <div class="surf-report">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                        <h3>Surf Report</h3>
+                                        <span>MERN Stack</span>
+                                        <br>
+                                        <button><a href="">Check It Out</a></button>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <div class="col-lg-1">
+                        <div class="led-wall">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <h3>LED Wall</h3>
+                                        <span>Node/Iot</span>
+                                        <br>
+                                        <button><a href="">See More</a></button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-1">
+                        <div class="auto-log">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <h3>Auto Maintenance Log</h3>
+                                        <span>Full Stack</span>
+                                        <br>
+                                        <button><a href="https://radiant-headland-22067.herokuapp.com/">Browse This Project</a></button>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                </a>
-
-                <a href="https://caroline1418.github.io/Run-Buddy/" class="flex-item" id="runbuddy">
-                    <div class="run-buddy">
-                        <h3>Run Buddy</h3>
-                        <span>HTML/CSS</span>
-                        <!-- <button class="rbdy-btn">CHECK IT OUT</button> -->
-                        
-                        
+                    <div class="col-lg-1">
+                        <div class="e720">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <h3>Entertainment 720</h3>
+                                        <span>MERN Stack</span>
+                                        <br>
+                                        <button><a href="https://caroline1418.github.io/entertainment720/">Take a Look</a></button>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                </a>
-
+                    <div class="col-lg-1">
+                        <div class="run-buddy">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <h3>Run Buddy</h3>
+                                        <span>HTML/CSS</span>
+                                        <br>
+                                        <button><a href="https://caroline1418.github.io/Run-Buddy/">Check It Out</a></button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
-    <footer class="contact-section" id="contact">
-        <h2>Contact Me</h2>
-        <div>
-            <address>
-                <a href="tel: +18016472412">801.647.2412</a>
-                <a href="mailto:carlpihllips98@gmail.com">carlphillips98@gmail.com</a>
-                <a href="https://github.com/Caroline1418?tab=repositories">GitHub</a>
-            </address>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Me</h2>
+                    <div>
+                        <address>
+                            <a href="tel: +8016472412">801.647.2412</a>
+                            <a href="mailto:carlphillips98@gmail.com">carlphillips98@gmail.com</a>
+                            <a href="https://github.com/Caroline1418?tab=repositories">GitHub</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
         </div>
-    </footer>
-    <!-- <script src="script.js"></script> -->
-</body>
-</html> 
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
